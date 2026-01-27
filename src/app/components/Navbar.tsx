@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className='flex items-center h-full px-4 justify-between w-full'>
             {/* Logo */}
           <h3 className='text-white font-bold text-xl md:text-2xl lg:text-3xl cursor-pointer'>
-            arnold street agency
+            HSN<span className='text-[#9CA3AF]'>Design</span>
           </h3>
                 {/* Menu button */}
           <button

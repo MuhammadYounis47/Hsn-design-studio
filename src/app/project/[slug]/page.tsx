@@ -19,6 +19,10 @@ export default function WorkPage() {
   const params = useParams();
   const slug = params.slug;
 
+  if (!slug || typeof slug !== 'string') {
+    return <div className="p-8">Work not found.</div>;
+  }
+
   const WorkComponent = componentsMap[slug];
 
   if (!WorkComponent) {

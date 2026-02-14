@@ -7,7 +7,7 @@ const Navbar = () => {
   const [open, setOpen] = useState<boolean>(false)
 
   const navItems = [
-    { link: "About", path: "#", color: "#FF4375" },
+    { link: "About", path: "/about", color: "#FF4375" },
     { link: "Our Work", path: "#", color: "#34B8FF" },
     { link: "Creative Studio", path: "#", color: '#BF62FF' },
     { link: "Digital Marketing", path: "#", color: "#FF4375" },

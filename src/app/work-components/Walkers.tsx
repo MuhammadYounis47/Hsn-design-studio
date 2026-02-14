@@ -16,7 +16,7 @@ const Walkers = () => {
   return (
     <>
       {/* HERO INFO SECTION */}
-      <section className="w-full bg-white py-20">
+      <section className="w-full bg-white py-20 lg:h-[65vh] lg:flex lg:items-center">
         <div className="mt-5 lg:mt-0 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
           {/* LEFT: LOGO */}

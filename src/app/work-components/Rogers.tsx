@@ -9,7 +9,7 @@ import RogersVideo from '../components/rogers/RogersVideo'
 const Rogers = () => {
   return (
     <>
-    <section className="w-full bg-white py-20 h-auto">
+    <section className="w-full bg-white py-20 lg:h-[65vh] lg:flex lg:items-center">
             <div className="mt-5 lg:mt-0 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center h-full">
               
               {/* LEFT: LOGO */}

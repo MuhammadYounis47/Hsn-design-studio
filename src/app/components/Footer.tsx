@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           
           {/* Logo and Description */}
           <div className="md:w-1/4">
-            <h2 className="text-3xl font-bold text-white mb-4">Arnold Street</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">HSN<span className="text-[#99A1AF]">Design</span></h2>
             <p className="text-gray-400 leading-relaxed">
               Delivering innovative digital solutions to help your business grow and shine online.
             </p>
@@ -48,10 +48,10 @@ const Footer: React.FC = () => {
             <p>
               Email:{' '}
               <a
-                href="mailto:info@arnoldstreet.com"
+                href="mailto:info@hsndesign.com"
                 className="hover:text-violet-500 transition"
               >
-                info@arnoldstreet.com
+                info@hsndesign.com
               </a>
             </p>
             <p>
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
               </a>
             </p>
             <p className="mt-2 max-w-xs whitespace-pre-line">
-              123 Arnold St, Suite 456{'\n'}
+              123 hsn design, Suite 456{'\n'}
               San Francisco, CA 94107{'\n'}
               United States
             </p>

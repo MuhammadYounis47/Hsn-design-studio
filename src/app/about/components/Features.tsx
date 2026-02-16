@@ -45,6 +45,18 @@ const Features = () => {
           </div>
         ))}
       </div>
+
+       <div className="flex flex-col md:flex-row justify-center gap-8 mt-5">
+  <button className="bg-black text-white p-2 rounded hover:bg-cyan-400 transition-colors duration-700 cursor-pointer hover:text-black font-medium">
+    Click To View Our Creative <span className="block sm:inline">Services</span>
+  </button>
+
+  <button className="bg-black text-white p-2 rounded hover:bg-cyan-400 transition-colors duration-700 cursor-pointer hover:text-black font-medium">
+    Click To View Our Digital <span className="block sm:inline">Marketing</span>
+  </button>
+</div>
+
+
     </section>
   );
 };

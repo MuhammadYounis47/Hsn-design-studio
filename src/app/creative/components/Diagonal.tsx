@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 
-const AgencyWithHeart = () => {
+const Diagonal = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -31,7 +31,7 @@ const AgencyWithHeart = () => {
       >
         {/* Diagonal background */}
         <div
-          className={`absolute inset-0 bg-gradient-to-tr from-amber-400 to-yellow-300 transition-transform duration-1000 ease-out
+          className={`absolute inset-0 bg-violet-500 transition-transform duration-1000 ease-out
             ${
               isVisible
                 ? "translate-x-0 translate-y-0"
@@ -64,4 +64,4 @@ const AgencyWithHeart = () => {
   );
 };
 
-export default AgencyWithHeart;
+export default Diagonal;

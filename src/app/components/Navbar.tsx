@@ -8,9 +8,9 @@ const Navbar = () => {
 
   const navItems = [
     { link: "About", path: "/about", color: "#FF4375" },
-    { link: "Our Work", path: "#", color: "#34B8FF" },
-    { link: "Creative Studio", path: "#", color: '#BF62FF' },
-    { link: "Digital Marketing", path: "#", color: "#FF4375" },
+    { link: "Our Work", path: "#our-work", color: "#34B8FF" },
+    { link: "Creative Studio", path: "/creative", color: '#BF62FF' },
+    { link: "Digital Marketing", path: "/marketing", color: "#FF4375" },
     { link: "The World on the Street", path: "#", color:"#34B8FF" },
     { link: "Contact", path: "#", color: "#FF4375" },
   ]

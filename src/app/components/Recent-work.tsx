@@ -27,7 +27,7 @@ const RecentWork = () => {
   })
 
   return (
-    <section className="w-full bg-black px-6 py-20">
+    <section id='our-work' className="w-full bg-black px-6 py-20">
       {/* heading */}
       <h2 className="text-3xl font-bold text-white mb-10">
         Recent Work

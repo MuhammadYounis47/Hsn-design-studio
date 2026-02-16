@@ -1,6 +1,12 @@
 import React from 'react';
 import AgencyWithHeart from './components/AgencyWithHeart';
 import Features from './components/Features';
+import LeadershipTeam from './components/LeadershipTeam';
+import DreamTeam from './components/DreamTeam';
+import AtAGlance from './components/AtGlance';
+import Content from '../components/Content';
+import Form from '../components/Form';
+import ContactStrip from '../components/ContactStrip';
 
 const page = () => {
   return (
@@ -15,6 +21,12 @@ const page = () => {
       {/* Scroll Reveal Section */}
       <AgencyWithHeart />
       <Features/>
+      <LeadershipTeam/>
+      <DreamTeam/>
+      <AtAGlance/>
+      <Content/>
+      <Form/>
+      <ContactStrip/>
     </>
   );
 };

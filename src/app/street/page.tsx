@@ -1,16 +1,16 @@
 import React from 'react'
-import OutShine from './components/OutShine'
-import GreateAt from './components/GreateAt'
-import OurProcess from './components/OurProcess'
-import RecentWork from '../components/Recent-work'
+import BlogAfterHeroSection from './components/ImageSection'
+import ImageSection from './components/ImageSection'
+import TwoColumnBlogSection from './components/ImageSection'
+
 import Content from '../components/Content'
 import ContactStrip from '../components/ContactStrip'
 
 const page = () => {
   return (
     <>
-     <section className="relative bg-white h-screen flex items-center">
-      <div className="container mx-auto px-4 text-center text-black">
+   <section className="relative bg-black h-screen flex items-center">
+      <div className="container mx-auto px-4 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 ">
           Hsn Design in Hyderabad for Brands Ready to Grow
         </h1>
@@ -19,10 +19,7 @@ const page = () => {
       </div>
       <div className="absolute inset-0 "></div>
     </section>
-    <OutShine/>
-    <GreateAt/>
-    <OurProcess/>
-    <RecentWork variant='light'/>
+    <TwoColumnBlogSection/>
     <Content/>
     <ContactStrip/>
     </>

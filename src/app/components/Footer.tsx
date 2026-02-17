@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom */}
         <div className="text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Arnold Street Agency. All rights reserved. |{' '}
+          &copy; {new Date().getFullYear()} Hsn Design. All rights reserved. |{' '}
           <a href="#privacy" className="hover:text-violet-500 transition">
             Privacy Policy
           </a>{' '}

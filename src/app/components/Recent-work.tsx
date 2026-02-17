@@ -8,9 +8,14 @@ import { works, Work } from '../data/works'
 interface FilterState {
   industry: string
   service: string
+  
 }
 
-const RecentWork = () => {
+interface RecentWorkProps {
+  variant?: 'dark' | 'light'
+}
+
+const RecentWork = ({ variant = 'dark' }: RecentWorkProps) => {
   const [filters, setFilters] = useState<FilterState>({
     industry: 'All',
     service: 'All',
@@ -26,21 +31,25 @@ const RecentWork = () => {
     return industryMatch && serviceMatch
   })
 
+  const isDark = variant === 'dark'
+
   return (
-    <section id='our-work' className="w-full bg-black px-6 py-20">
+    <section
+      id="our-work"
+      className={`w-full px-6 py-20 ${
+        isDark ? 'bg-black text-white' : 'bg-white text-black'
+      }`}
+    >
       {/* heading */}
-      <h2 className="text-3xl font-bold text-white mb-10">
+      <h2 className={`text-3xl font-bold mb-10 ${isDark ? 'text-white' : 'text-black'}`}>
         Recent Work
       </h2>
 
       {/* filters */}
-      <FilterBar
-        filters={filters}
-        setFilters={setFilters}
-      />
+      <FilterBar filters={filters} setFilters={setFilters} variant={variant} />
 
       {/* work grid */}
-      <WorkGrid works={filteredWorks} />
+      <WorkGrid works={filteredWorks} variant={variant} />
     </section>
   )
 }

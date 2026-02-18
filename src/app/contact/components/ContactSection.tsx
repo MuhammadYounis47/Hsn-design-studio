@@ -135,7 +135,7 @@ const ContactUsSection = () => {
         {/* Submit */}
         <button
           type="submit"
-          className="bg-black text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-500 transition cursor-pointer"
+          className="bg-black text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-500 transition-colors cursor-pointer"
         >
           Submit
         </button>

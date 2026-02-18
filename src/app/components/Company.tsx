@@ -68,13 +68,13 @@ const Company = () => {
 
   return (
     <section className="bg-white w-full py-10 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex gap-8 items-center justify-center">
+      <div className="w-full px-4">
+        <div className="flex gap-8 items-center justify-between w-full">
           {visibleLogos.map((item) => (
             <div
               key={item.id}
               className="relative flex items-center justify-center
-                         w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36"
+                         w-32 h-32 sm:w-32 sm:h-32 md:w-36 md:h-36"
             >
               <Image
                 src={item.imagePath}

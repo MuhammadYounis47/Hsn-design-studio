@@ -19,7 +19,7 @@ export default function GetInTouch() {
 
   return (
     <section className="w-full bg-black text-white py-20">
-      <div className="w-full flex flex-col space-y-5 md:flex px-6 gap-8">
+      <div className="w-full  flex flex-col lg:flex-row px-6 gap-8">
         {/* Top Title */}
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold mt-3">
@@ -35,51 +35,7 @@ export default function GetInTouch() {
         </div>
           {/* Google Map */}
         <div className="w-full rounded-2xl overflow-hidden border border-white/10 bg-white/5 h-[80vh]">
-            {!apiKey ? (
-              <div className="w-full h-full flex items-center justify-center text-white/70 p-6 text-center">
-                Google Maps API Key missing. <br />
-                Add it in <b>.env.local</b> as{" "}
-                <b>NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</b>
-              </div>
-            ) : !isLoaded ? (
-              <div className="w-full h-full flex items-center justify-center text-white/70">
-                Loading map...
-              </div>
-            ) : (
-              <GoogleMap
-                mapContainerStyle={containerStyle}
-                center={center}
-                zoom={14}
-                options={{
-                  disableDefaultUI: true,
-                  zoomControl: true,
-                  styles: [
-                    { elementType: "geometry", stylers: [{ color: "#1d1d1d" }] },
-                    {
-                      elementType: "labels.text.fill",
-                      stylers: [{ color: "#8a8a8a" }],
-                    },
-                    {
-                      elementType: "labels.text.stroke",
-                      stylers: [{ color: "#1d1d1d" }],
-                    },
-                    {
-                      featureType: "road",
-                      elementType: "geometry",
-                      stylers: [{ color: "#2b2b2b" }],
-                    },
-                    {
-                      featureType: "water",
-                      elementType: "geometry",
-                      stylers: [{ color: "#0b0b0b" }],
-                    },
-                  ],
-                }}
-              >
-                <Marker position={center} />
-              </GoogleMap>
-            )}
-          </div>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.383692789848!2d68.32199257473351!3d25.39196402378564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7bc2d3dde651%3A0x36e6a6d1116544dd!2sIRIS%20Training%20and%20Incubation%20Center!5e0!3m2!1sen!2s!4v1771410267879!5m2!1sen!2s" width="900" height="550" style={{ border: "0" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>          </div>
        
       </div>
     </section>

@@ -19,10 +19,11 @@ const Navbar = () => {
     <>
       <nav className='fixed bg-black w-full h-22 top-0 left-0  z-50  bg-opacity-70'>
         <div className='flex items-center h-full px-4 justify-between w-full'>
-            {/* Logo */}
-          <h3 className='text-white font-bold text-xl md:text-2xl lg:text-3xl cursor-pointer'>
-            HSN<span className='text-[#9CA3AF]'>Design</span>
-          </h3>
+         <Link href="/">
+  <h3 className="text-white font-bold text-xl md:text-2xl lg:text-3xl cursor-pointer">
+    HSN<span className="text-[#9CA3AF]">Design</span>
+  </h3>
+</Link>
                 {/* Menu button */}
           <button
             onClick={() => setOpen(!open)}

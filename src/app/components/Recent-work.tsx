@@ -46,10 +46,10 @@ const RecentWork = ({ variant = 'dark' }: RecentWorkProps) => {
       </h2>
 
       {/* filters */}
-      <FilterBar filters={filters} setFilters={setFilters} variant={variant} />
+      <FilterBar filters={filters} setFilters={setFilters} />
 
       {/* work grid */}
-      <WorkGrid works={filteredWorks} variant={variant} />
+      <WorkGrid works={filteredWorks} />
     </section>
   )
 }

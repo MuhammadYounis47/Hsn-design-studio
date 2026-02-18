@@ -19,7 +19,7 @@ export default function GetInTouch() {
 
   return (
     <section className="w-full bg-black text-white py-20">
-      <div className="w-full flex px-6 gap-8">
+      <div className="w-full flex flex-col space-y-5 md:flex px-6 gap-8">
         {/* Top Title */}
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold mt-3">
@@ -30,7 +30,7 @@ export default function GetInTouch() {
            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis aliquam magnam soluta repudiandae impedit ex doloremque quas, quaerat in voluptates quae enim sequi iure voluptas exercitationem nam qui asperiores!
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nisi doloremque quod neque, amet omnis eligendi nihil. Sed eius praesentium numquam aliquid aut, tenetur quas voluptatem, consequuntur omnis esse iusto?
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime amet eveniet deleniti. Voluptatum numquam dolore repellendus eos tempore. Labore assumenda suscipit iste. Ab unde omnis provident placeat delectus odit sunt!
-           
+
           </p>
         </div>
           {/* Google Map */}

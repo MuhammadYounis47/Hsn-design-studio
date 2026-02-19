@@ -1,26 +1,42 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(false)
+  const [screenType, setScreenType] = useState<'mobile' | 'tablet' | 'laptop'>(
+    'laptop'
+  )
 
   useEffect(() => {
-    // screen size check karna
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768) // Tailwind md breakpoint = 768px
+      const width = window.innerWidth
+
+      if (width < 768) {
+        setScreenType('mobile')
+      } else if (width >= 768 && width < 1024) {
+        setScreenType('tablet')
+      } else {
+        setScreenType('laptop')
+      }
     }
 
-    handleResize() // initial check
+    handleResize()
     window.addEventListener('resize', handleResize)
 
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  const videoSrc =
+    screenType === 'mobile'
+      ? '/mobile.mp4'
+      : screenType === 'tablet'
+      ? '/tablet.mp4'
+      : '/hero.mp4'
+
   return (
-    <section className="w-full h-screen">
+    <section className="w-full min-h-screen mt-20">
       <video
-        className="w-full h-screen object-cover"
-        src={isMobile ? '/mobile.mp4' : '/hero.mp4'}
+        className="w-full h-full object-contain"
+        src={videoSrc}
         autoPlay
         muted
         loop

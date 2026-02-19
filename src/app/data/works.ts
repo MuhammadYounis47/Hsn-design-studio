@@ -53,7 +53,7 @@ export const works: Work[] = [
     title: "Royal Bank Plaza",
     industry: "Corporate",
     service: "Advertisement campaign",
-    image: "/slug-images/slug-7.jpg",
+    image: "/slug-images/slug-6.jpg",
     slug: "corporate-campaign",
   },
   {
@@ -61,7 +61,7 @@ export const works: Work[] = [
     title: "Lagostina",
     industry: "Corporate",
     service: "Advertisement campaign",
-    image: "/slug-images/slug-8.jpg",
+    image: "/slug-images/slug-7.jpg",
     slug: "corporate-campaign",
   },
   {
@@ -69,7 +69,7 @@ export const works: Work[] = [
     title: "T-fal",
     industry: "Corporate",
     service: "Advertisement campaign",
-    image: "/slug-images/slug-9.jpg",
+    image: "/slug-images/slug-8.jpg",
     slug: "corporate-campaign",
   },
   {
@@ -77,7 +77,7 @@ export const works: Work[] = [
     title: "Pocky",
     industry: "Corporate",
     service: "Advertisement campaign",
-    image: "/slug-images/slug-10.jpg",
+    image: "/slug-images/slug-9.jpg",
     slug: "corporate-campaign",
   },
   {
@@ -85,7 +85,7 @@ export const works: Work[] = [
     title: "Roar-Oraganic",
     industry: "Corporate",
     service: "Advertisement campaign",
-    image: "/slug-images/slug-11.jpg",
+    image: "/slug-images/slug-10.jpg",
     slug: "corporate-campaign",
   },
   {

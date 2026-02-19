@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState } from 'react'
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
@@ -17,12 +18,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='fixed bg-black w-full h-22 top-0 left-0  z-50  bg-opacity-70'>
+      <nav className='fixed bg-black w-full h-22 top-0 left-0  z-50  bg-opacity-70 '>
         <div className='flex items-center h-full px-4 justify-between w-full'>
          <Link href="/">
-  <h3 className="text-white font-bold text-xl md:text-2xl lg:text-3xl cursor-pointer">
-    HSN<span className="text-[#9CA3AF]">Design</span>
-  </h3>
+        <Image src="/logo/hsn-20.png" alt="HSN Design Logo" width={200} height={40} className='w-full h-full'/>
 </Link>
                 {/* Menu button */}
           <button
@@ -34,7 +33,7 @@ const Navbar = () => {
         </div>
 
         <div
-         className={`fixed top-0 right-0 h-full w-full md:w-1/2 bg-white text-black transform transition-transform duration-300
+         className={`fixed top-0 right-0 h-full w-full md:w-1/2 bg-white text-black transform transition-transform duration-500
 ${open ? "translate-x-0" : "translate-x-full"}`}
 
         >
